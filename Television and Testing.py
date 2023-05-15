@@ -1,5 +1,10 @@
 #Create a class for the TV
-#Make a constructor that has the default value of the channel and the volume which is 1 and an indicator which is turned off by default as its object.
+class TV:
+    #Make a constructor that has the default value of the channel and the volume which is 1 and an indicator which is turned off by default as its object.
+    def __init__(self, channel = 1, volumeLevel = 1, on = False):
+        self.channel = channel
+        self.volumeLevel = volumeLevel
+        self.on = on
 #Make an function when tv is turned on (Bool value changes)
 #Make an function when tv is turned off (Bool value is still default)
 #Make a function that retrieves the value of the variable "channel"  in order to get the Television Channel
