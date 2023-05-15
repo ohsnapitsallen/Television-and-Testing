@@ -25,7 +25,7 @@ class TV:
     def setVolume(self, volumeLevel):
         if self.on and 1 <= volumeLevel <= 7:
             self.volumeLevel = volumeLevel
-    #Make a function to change to the next channel        
+    #Make a function to change to the next channel
     def channelUp(self, on, channel):
         if self.on and self.channel < 120:
             self.channel += 1
@@ -33,7 +33,14 @@ class TV:
     def channelDown(self, on, channel):
         if self.on and self.channel > 1:
             self.channel -= 1
-#Make a function to make the volume higher      
-#Make a function to lower the volume  
+    #Make a function to make the volume higher      
+    def volumeUp(self, on, volumeLevel):
+        if self.on and self.volumeLevel < 7:
+            self.volumeLevel += 1
+    #Make a function to lower the volume  
+    def volumeDown(self, on, volumeLevel):
+        if self.on and self.volumeLevel > 1:
+            self.volumeLevel -= 1
+
 #Test the TV by creating a function with all of the function of the TV.
 #Start the test function
