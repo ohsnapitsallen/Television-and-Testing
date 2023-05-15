@@ -5,8 +5,12 @@ class TV:
         self.channel = channel
         self.volumeLevel = volumeLevel
         self.on = on
-#Make an function when tv is turned on (Bool value changes)
-#Make an function when tv is turned off (Bool value is still default)
+    #Make a function when tv is turned on (Bool value changes)
+    def turnOn(self, on):
+        self.on = True
+    #Make a function when tv is turned off (Bool value is still default)
+    def turnOff(self, on):
+        self.on = False
 #Make a function that retrieves the value of the variable "channel"  in order to get the Television Channel
 #Make a function to set the channel number that is equal or more than one and equal to or less than 120
 #Make a function that retrieves the value of the variable "volumeLevel"  in order to get the volume of the television
