@@ -6,43 +6,45 @@ class TV:
         self.volumeLevel = volumeLevel
         self.on = on
     #Make a function when tv is turned on (Bool value changes)
-    def turnOn(self, on):
+    def turnOn(self):
         self.on = True
     #Make a function when tv is turned off (Bool value is still default)
-    def turnOff(self, on):
+    def turnOff(self):
         self.on = False
     #Make a function that retrieves the value of the variable "channel"  in order to get the Television Channel
-    def getChannel(self, channel):
+    def getChannel(self):
         return self.channel
     #Make a function to set the channel number that is equal or more than one and equal to or less than 120
     def setChannel(self, channel):
         if self.on and 1 <= channel <= 120:
             self.channel = channel
     #Make a function that retrieves the value of the variable "volumeLevel"  in order to get the volume of the television
-    def getVolume(self, volumeLevel):
+    def getVolume(self):
         return self.volumeLevel
     #Make a function to set the volume number that is equal or more than one and equal to or less than 7
     def setVolume(self, volumeLevel):
         if self.on and 1 <= volumeLevel <= 7:
             self.volumeLevel = volumeLevel
-    #Make a function to change to the next channel
-    def channelUp(self, on, channel):
+    #Make a function to change to the next channel        
+    def channelUp(self):
         if self.on and self.channel < 120:
             self.channel += 1
     #Make a function to change to the previous channel    
-    def channelDown(self, on, channel):
+    def channelDown(self):
         if self.on and self.channel > 1:
             self.channel -= 1
     #Make a function to make the volume higher      
-    def volumeUp(self, on, volumeLevel):
+    def volumeUp(self):
         if self.on and self.volumeLevel < 7:
             self.volumeLevel += 1
     #Make a function to lower the volume  
-    def volumeDown(self, on, volumeLevel):
+    def volumeDown(self):
         if self.on and self.volumeLevel > 1:
             self.volumeLevel -= 1
 
+
 #Test the TV by creating a function with all of the function of the TV.
+
 def main():
     tv1 = TV()
     tv1.turnOn()
@@ -64,5 +66,5 @@ def main():
     tv2.volumeDown()
     print("tv2's channel is", tv2.getChannel(), "and volume level is", tv2.getVolume())
 #Start the test function
-    if __name__ == "__main__":
+if __name__ == "__main__":
     main()
