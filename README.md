@@ -1,5 +1,5 @@
-# Television-and-Testing
-Good day once again to anyone who stumbled upon this code. Today, I bring you my latest code for a television as well as testing the program. It has the basic functions of a television such as:
+# Television and Testing
+Good day once again to anyone who stumbled upon this code. Today, I bring you my latest code for a television as well as another file containing a function to test the television. It has the basic functions of a television such as:
 - Changing the channel manually
 - Changing the volume manually
 - Scrolling through channels (from channels 1 to 120)
