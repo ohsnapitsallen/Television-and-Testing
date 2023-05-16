@@ -27,6 +27,19 @@ def main():
     #Print the final channel and volume of tv2
     print("tv2's channel is", tv2.getChannel(), "and volume level is", tv2.getVolume())
 
-#TV3 is not included but we will test if the tv would work if it is turned off
-#Print the final channel and volume of tv3
+
+    #TV3 is not included but we will test if the tv would work if it is turned off
+    tv3 = TV()
+    tv3.turnOff()
+    tv3.setChannel(48)
+    tv3.channelDown()
+    tv3.channelUp()
+    tv3.setVolume(7)
+    tv3.volumeDown()
+    tv3.volumeDown()
+    tv3.volumeUp()
+    #Print the final channel and volume of tv3 (Volume and Channel should be the default)
+    print("tv3's channel is", tv3.getChannel(), "and volume level is", tv3.getVolume())
 #Start the test function
+if __name__ == "__main__":
+    main()
