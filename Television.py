@@ -41,30 +41,3 @@ class TV:
     def volumeDown(self):
         if self.on and self.volumeLevel > 1:
             self.volumeLevel -= 1
-
-
-#Test the TV by creating a function with all of the function of the TV.
-
-def main():
-    tv1 = TV()
-    tv1.turnOn()
-    tv1.setChannel(28)
-    tv1.channelUp()
-    tv1.channelUp()
-    tv1.volumeUp()
-    tv1.volumeUp()
-    print("tv1's channel is", tv1.getChannel(), "and volume level is", tv1.getVolume())
-    
-    tv2 = TV()
-    tv2.turnOn()
-    tv2.setChannel(5)
-    tv2.channelDown()
-    tv2.channelDown()
-    tv2.setVolume(5)
-    tv2.volumeDown()
-    tv2.volumeDown()
-    tv2.volumeDown()
-    print("tv2's channel is", tv2.getChannel(), "and volume level is", tv2.getVolume())
-#Start the test function
-if __name__ == "__main__":
-    main()
